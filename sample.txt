@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Hi this first sample file to generate release notes
+=======
+Hello demo file
+>>>>>>> ffbb817293327f24a3492060fab45cab6c50fb20

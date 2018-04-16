@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20171006 17:35:03.861" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\vasantha bharathi\Desktop\Work\Automation\QA_Automation_IVtree\resource\HomePage_IVtree.robot" id="s1" name="HomePage IVtree">
+<test id="s1-t1" name="TestCase--01:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20171006 17:35:34.252" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20171006 17:35:59.143" starttime="20171006 17:35:34.252"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20171006 17:36:00.277" starttime="20171006 17:35:59.144"></status>
+</kw>
+<status status="PASS" endtime="20171006 17:36:00.277" starttime="20171006 17:35:34.252"></status>
+</kw>
+<kw name="Navigation module for HomeCompany">
+<kw name="Navigate Between HomeCompany" library="IVTreeHomePage">
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20171006 17:36:00.280" level="INFO">Clicking element 'Home_menu'.</msg>
+<msg timestamp="20171006 17:36:12.883" level="INFO">Clicking element 'Company_menu'.</msg>
+<msg timestamp="20171006 17:36:40.370" level="INFO">Typing text 'pappu.kumar@ivtree.com' into text field 'Your_email'</msg>
+<msg timestamp="20171006 17:36:40.687" level="INFO">Clicking button 'Submit_button'.</msg>
+<msg timestamp="20171006 17:36:45.095" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_1.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20171006 17:36:45.095" html="yes" level="INFO">Navigation succesful</msg>
+<msg timestamp="20171006 17:36:45.095" level="INFO">C:\Python27\lib\site-packages\robot\libraries\Screenshot.py:349: wxPyDeprecationWarning: Call to deprecated item EmptyBitmap. Use :class:`wx.Bitmap` instead
+  bitmap = wx.EmptyBitmap(width, height, -1)</msg>
+<status status="PASS" endtime="20171006 17:36:45.095" starttime="20171006 17:36:00.279"></status>
+</kw>
+<status status="PASS" endtime="20171006 17:36:45.095" starttime="20171006 17:36:00.278"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171006 17:36:48.701" starttime="20171006 17:36:45.095"></status>
+</kw>
+<tags>
+<tag>Ivtree navigation modules through home and Company</tag>
+</tags>
+<status status="PASS" endtime="20171006 17:36:48.701" critical="yes" starttime="20171006 17:35:34.252"></status>
+</test>
+<test id="s1-t2" name="TestCase--02:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20171006 17:36:48.716" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20171006 17:37:02.639" starttime="20171006 17:36:48.716"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20171006 17:37:03.787" starttime="20171006 17:37:02.639"></status>
+</kw>
+<status status="PASS" endtime="20171006 17:37:03.788" starttime="20171006 17:36:48.716"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20171006 17:37:03.789" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20171006 17:37:16.209" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20171006 17:37:16.515" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_2.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_2.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20171006 17:37:16.515" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20171006 17:37:16.515" starttime="20171006 17:37:03.789"></status>
+</kw>
+<status status="PASS" endtime="20171006 17:37:16.515" starttime="20171006 17:37:03.788"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20171006 17:37:19.653" starttime="20171006 17:37:16.515"></status>
+</kw>
+<tags>
+<tag>Ivtree Product modules for sale department</tag>
+</tags>
+<status status="PASS" endtime="20171006 17:37:19.653" critical="yes" starttime="20171006 17:36:48.701"></status>
+</test>
+<doc>IVTree project for automation suite
+</doc>
+<status status="PASS" endtime="20171006 17:37:19.653" starttime="20171006 17:35:03.924"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Ivtree navigation modules through home and Company</stat>
+<stat fail="0" pass="1">Ivtree Product modules for sale department</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="HomePage IVtree" pass="2">HomePage IVtree</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

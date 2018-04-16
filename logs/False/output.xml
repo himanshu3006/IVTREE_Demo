@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180227 12:51:19.779" generator="Robot 3.0.2 (Python 2.7.12 on linux2)">
+<suite source="/home/arifivtree/git_home/New /martin/Ivtree_Automation/resource/HomePage_IVtree.robot" id="s1" name="HomePage IVtree">
+<test id="s1-t1" name="Navigate to the Home Page:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:51:20.167" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:51:29.272" starttime="20180227 12:51:20.165"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:51:29.390" starttime="20180227 12:51:29.273"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:51:29.390" starttime="20180227 12:51:20.164"></status>
+</kw>
+<kw name="Navigation module for HomeCompany">
+<kw name="Navigate Between HomeCompany" library="IVTreeHomePage">
+<arguments>
+<arg>${email}</arg>
+</arguments>
+<msg timestamp="20180227 12:51:29.393" level="INFO">Clicking element 'Home_menu'.</msg>
+<msg timestamp="20180227 12:51:40.936" level="INFO">Clicking element 'Company_menu'.</msg>
+<msg timestamp="20180227 12:52:08.175" level="INFO">Typing text 'pappu.kumar@ivtree.com' into text field 'Your_email'</msg>
+<msg timestamp="20180227 12:52:08.361" level="INFO">Clicking button 'Submit_button'.</msg>
+<msg timestamp="20180227 12:52:11.595" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_1.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_1.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:52:11.596" html="yes" level="INFO">Navigation succesful</msg>
+<status status="PASS" endtime="20180227 12:52:11.596" starttime="20180227 12:51:29.392"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:52:11.597" starttime="20180227 12:51:29.391"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:52:11.659" starttime="20180227 12:52:11.598"></status>
+</kw>
+<tags>
+<tag>Ivtree navigation modules through home and Company</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:52:11.660" critical="yes" starttime="20180227 12:51:20.164"></status>
+</test>
+<test id="s1-t2" name="Selecting Product:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:52:11.662" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:52:21.332" starttime="20180227 12:52:11.662"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:52:21.440" starttime="20180227 12:52:21.332"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:52:21.440" starttime="20180227 12:52:11.661"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:52:21.441" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:52:35.211" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:52:35.351" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_2.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_2.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:52:35.351" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:52:35.352" starttime="20180227 12:52:21.441"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:52:35.352" starttime="20180227 12:52:21.440"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:52:35.413" starttime="20180227 12:52:35.352"></status>
+</kw>
+<tags>
+<tag>Ivtree Product modules for sale department</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:52:35.413" critical="yes" starttime="20180227 12:52:11.661"></status>
+</test>
+<test id="s1-t3" name="Verify Product:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:52:35.417" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:52:43.371" starttime="20180227 12:52:35.417"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:52:43.485" starttime="20180227 12:52:43.373"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:52:43.485" starttime="20180227 12:52:35.416"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:52:43.489" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:52:55.994" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:52:56.131" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_3.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_3.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:52:56.131" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:52:56.132" starttime="20180227 12:52:43.488"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:52:56.132" starttime="20180227 12:52:43.486"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:52:56.192" starttime="20180227 12:52:56.132"></status>
+</kw>
+<tags>
+<tag>Verify Product listed</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:52:56.192" critical="yes" starttime="20180227 12:52:35.415"></status>
+</test>
+<test id="s1-t4" name="Verify Modules:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:52:56.195" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:53:04.263" starttime="20180227 12:52:56.194"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:53:04.369" starttime="20180227 12:53:04.264"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:53:04.369" starttime="20180227 12:52:56.194"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:53:04.370" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:53:16.747" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:53:16.902" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_4.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_4.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:53:16.902" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:53:16.902" starttime="20180227 12:53:04.370"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:53:16.903" starttime="20180227 12:53:04.370"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:53:16.962" starttime="20180227 12:53:16.903"></status>
+</kw>
+<tags>
+<tag>Verify Product modules listed</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:53:16.962" critical="yes" starttime="20180227 12:52:56.193"></status>
+</test>
+<test id="s1-t5" name="Verify Product Feature:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:53:16.965" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:53:24.454" starttime="20180227 12:53:16.964"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:53:24.559" starttime="20180227 12:53:24.455"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:53:24.559" starttime="20180227 12:53:16.964"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:53:24.560" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:53:36.979" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:53:37.131" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_5.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_5.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:53:37.132" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:53:37.132" starttime="20180227 12:53:24.560"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:53:37.132" starttime="20180227 12:53:24.559"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:53:37.195" starttime="20180227 12:53:37.133"></status>
+</kw>
+<tags>
+<tag>Verify Product Freature</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:53:37.195" critical="yes" starttime="20180227 12:53:16.963"></status>
+</test>
+<test id="s1-t6" name="Verify Features :">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:53:37.198" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:53:44.975" starttime="20180227 12:53:37.198"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:53:45.078" starttime="20180227 12:53:44.975"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:53:45.079" starttime="20180227 12:53:37.197"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:53:45.080" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:53:57.751" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:53:57.890" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_6.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_6.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:53:57.890" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:53:57.891" starttime="20180227 12:53:45.080"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:53:57.891" starttime="20180227 12:53:45.079"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:53:57.976" starttime="20180227 12:53:57.891"></status>
+</kw>
+<tags>
+<tag>Verify all festures</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:53:57.977" critical="yes" starttime="20180227 12:53:37.196"></status>
+</test>
+<test id="s1-t7" name="Collecting Data:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:53:57.980" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:54:05.675" starttime="20180227 12:53:57.979"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:54:05.787" starttime="20180227 12:54:05.676"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:54:05.787" starttime="20180227 12:53:57.979"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:54:05.797" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:54:18.047" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:54:18.186" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_7.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_7.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:54:18.186" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:54:18.187" starttime="20180227 12:54:05.797"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:54:18.187" starttime="20180227 12:54:05.795"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:54:18.247" starttime="20180227 12:54:18.188"></status>
+</kw>
+<tags>
+<tag>Collecting all inforation</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:54:18.247" critical="yes" starttime="20180227 12:53:57.978"></status>
+</test>
+<test id="s1-t8" name="Validate Information:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:54:18.250" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:54:25.958" starttime="20180227 12:54:18.249"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:54:26.079" starttime="20180227 12:54:25.960"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:54:26.080" starttime="20180227 12:54:18.248"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:54:26.084" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:54:38.619" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:54:38.790" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_8.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_8.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:54:38.790" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:54:38.790" starttime="20180227 12:54:26.083"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:54:38.791" starttime="20180227 12:54:26.081"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:54:38.856" starttime="20180227 12:54:38.791"></status>
+</kw>
+<tags>
+<tag>Validating information</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:54:38.857" critical="yes" starttime="20180227 12:54:18.248"></status>
+</test>
+<test id="s1-t9" name="Validate Data:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:54:38.859" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:54:46.654" starttime="20180227 12:54:38.859"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:54:46.778" starttime="20180227 12:54:46.658"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:54:46.779" starttime="20180227 12:54:38.858"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:54:46.782" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:54:59.323" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:54:59.450" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_9.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_9.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:54:59.450" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:54:59.451" starttime="20180227 12:54:46.781"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:54:59.451" starttime="20180227 12:54:46.780"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:54:59.512" starttime="20180227 12:54:59.452"></status>
+</kw>
+<tags>
+<tag>Validate data</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:54:59.512" critical="yes" starttime="20180227 12:54:38.857"></status>
+</test>
+<test id="s1-t10" name="Verify Product Info:">
+<kw name="Open Browser to the IVTree Page">
+<doc>Open Mentioned Browser From Variable And Pass Respective Url from Variable To UrlField</doc>
+<kw name="Open Browser" library="IVTreeHomePage">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20180227 12:54:59.514" level="INFO">Opening browser 'Chrome' to base url 'https://ivtree.com/'</msg>
+<status status="PASS" endtime="20180227 12:55:07.422" starttime="20180227 12:54:59.514"></status>
+</kw>
+<kw name="Maximize Browser Window" library="IVTreeHomePage">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180227 12:55:07.542" starttime="20180227 12:55:07.427"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:55:07.543" starttime="20180227 12:54:59.514"></status>
+</kw>
+<kw name="Product module for sales">
+<kw name="Products Module" library="IVTreeHomePage">
+<msg timestamp="20180227 12:55:07.544" level="INFO">Clicking element 'Product_menu'.</msg>
+<msg timestamp="20180227 12:55:20.068" level="INFO">Clicking element 'Click_sales'.</msg>
+<msg timestamp="20180227 12:55:20.203" html="yes" level="INFO">&lt;a href="screenshots/Verify_IVtree_Page_10.jpg"&gt;&lt;img src="screenshots/Verify_IVtree_Page_10.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20180227 12:55:20.203" html="yes" level="INFO">Product modules succesfully clicked sales</msg>
+<status status="PASS" endtime="20180227 12:55:20.204" starttime="20180227 12:55:07.544"></status>
+</kw>
+<status status="PASS" endtime="20180227 12:55:20.204" starttime="20180227 12:55:07.543"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="IVTreeHomePage">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180227 12:55:20.264" starttime="20180227 12:55:20.205"></status>
+</kw>
+<tags>
+<tag>Verify all product info</tag>
+</tags>
+<status status="PASS" endtime="20180227 12:55:20.264" critical="yes" starttime="20180227 12:54:59.513"></status>
+</test>
+<doc>IVTree project for automation suite
+</doc>
+<status status="PASS" endtime="20180227 12:55:20.266" starttime="20180227 12:51:19.780"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="10">Critical Tests</stat>
+<stat fail="0" pass="10">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Collecting all inforation</stat>
+<stat fail="0" pass="1">Ivtree navigation modules through home and Company</stat>
+<stat fail="0" pass="1">Ivtree Product modules for sale department</stat>
+<stat fail="0" pass="1">Validate data</stat>
+<stat fail="0" pass="1">Validating information</stat>
+<stat fail="0" pass="1">Verify all festures</stat>
+<stat fail="0" pass="1">Verify all product info</stat>
+<stat fail="0" pass="1">Verify Product Freature</stat>
+<stat fail="0" pass="1">Verify Product listed</stat>
+<stat fail="0" pass="1">Verify Product modules listed</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="HomePage IVtree" pass="10">HomePage IVtree</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
